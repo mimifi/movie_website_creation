@@ -1,3 +1,5 @@
+import webbrowser
+
 
 class Movie:
     """
@@ -18,8 +20,12 @@ class Movie:
         self.storyline = movie_storyline
         self.poster_image_url = poster_image
         self.trailer_youtube_url = trailer_youtube
+        #self.director = director
 
+    # def show_info(self):
+    #     print("Title: " + self.title)
+    #     print("Storyline: " + self.storyline)
+    #     print("Director: " + self.director)
 
-
-
-
+    # def open_trailer(self):
+    #    trailer_movie = webbrowser.open(self.trailer_youtube_url)

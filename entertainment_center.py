@@ -1,25 +1,37 @@
+import fresh_tomatoes
 import media
 
-toy_story = media.Movie("Toy Story",
-                        "A story of a boy and his toys that come to life",
-                        "https://de.wikipedia.org/wiki/Toy_Story",
-                        "https://www.youtube.com/watch?v=KYz2wyBy3kc")
-#print (toy_story.trailer_youtube_url)
+rubber = media.Movie("Rubber",
+                     "A tire that comes to life and kills people with its psychic powers",
+                     "https://images-na.ssl-images-amazon.com/images/I/81ixc5%2BQjQL._SL1500_.jpg",
+                     "https://www.youtube.com/watch?v=eLJljwH_wR0")
 
 avatar = media.Movie("Avatar",
                      "A marine on an alien planet",
-                     "http://www.avatarmovie.com/index.html",
+                     "https://images-na.ssl-images-amazon.com/images/I/81Nh4sSvSaL._SL1500_.jpg",
                      "https://www.youtube.com/watch?time_continue=6&v=1EnL7vUmvQ4")
-#print (avatar.storyline)
-
-# avatar.open_trailer()
 
 just_like_heaven = media.Movie("Just like Heaven",
                                "Car accident of a young emergency medicine physician whose work is her whole life",
-                               "https://en.wikipedia.org/wiki/Just_like_Heaven_(film)",
+                               "https://reliancehvg.co.in/store/images/P/Just%20Like%20Heaven%20DVD%20inlay1.jpg",
                                "https://www.youtube.com/watch?v=WPyJTNzzizw")
-print (just_like_heaven.title, just_like_heaven.storyline)
-just_like_heaven.open_trailer()
 
+zoomania = media.Movie("Zoomania",
+                       "A story of rabbit to make her career",
+                       "http://t1.gstatic.com/images?q=tbn:ANd9GcQDoqIP_EsdSZjJmMVWa6DQnv_bXt1G9V12FBjXljWU98oIkzqr",
+                       "https://www.youtube.com/watch?v=GIshH9EXIUA")
 
+the_intouchable = media.Movie("The Intouchable",
+                              "A story of best two friends",
+                              "https://images-na.ssl-images-amazon.com/images/I/51po9WM6HKL._SY355_.jpg",
+                              "https://www.youtube.com/watch?v=QNDSMwyGswg")
 
+matrix = media.Movie("Matrix",
+                     "Cybercriminal and computer programmer Neo learns this truth and is drawn into a rebellion against the machines",
+                     "https://gfx.videobuster.de/archive/v/cunXirXpVaV3oXrC6jOckGwcz0lMkawMDklMkYwMSUyRmltYZklMkZqcGVnJTJGYWQ1ZWU2ZjdjvqtlYjZlYWXgs7c2ZDFj1mUuanBnJnI9d-84/matrix.jpg",
+                     "https://www.youtube.com/watch?v=e1XqKDdFxng")
+
+movies = [rubber, avatar, just_like_heaven, zoomania, the_intouchable, matrix]
+fresh_tomatoes.open_movies_page(movies)
+
+print (media.Movie.__doc__)
